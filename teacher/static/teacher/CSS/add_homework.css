@@ -1,0 +1,65 @@
+.home .statistics form input[type="file"]{
+    display: none;
+}
+.home .statistics form .upload{
+    background-color: #fff;
+    border: 2px solid #007bff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 30px;
+    width: 190px;
+    font-family: roboto;
+    margin-left: 120px;
+}
+.home .statistics form label i{
+    padding-right: 5px;
+}
+.home .statistics form .beadline{
+    font-family: roboto;
+}
+.home .statistics form input[type="datetime-local"]{
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-family: roboto;
+}
+.home .statistics .homework{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.home .statistics  .view h3{
+    color: #FFF;
+    font-family: roboto;
+}
+.home .statistics  .view{
+    margin-top: 20px;
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.home .statistics .form{
+    padding: 10px 30px;
+    background-color: #FFF;
+    display: flex;
+}
+.home .statistics form button{
+    display: block;
+    margin-top: 35px;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #007bff;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 17px;
+    margin-left: 25%;
+}
+.form img{
+    width: 450px;
+    height: 250px;
+}

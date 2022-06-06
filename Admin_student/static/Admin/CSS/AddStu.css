@@ -1,0 +1,64 @@
+
+.home .statistics{
+    background-color: #eee;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+.home .statistics .stu_result{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.home .statistics .stu_result h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+.home .statistics .stu_result .view{
+    margin-top: 20px;
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.home .statistics .stu_result .view p{
+    color: #FFF;
+    font-family: roboto;
+}
+.home .statistics .stu_result form{
+    padding: 10px 30px;
+    background-color: #FFF;
+}
+.home .statistics .stu_result form input,
+.home .statistics .stu_result form select{
+    display: block;
+    margin-top: 10px;
+    padding: 15px 10px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid rgb(218, 216, 216);
+    font-family: roboto;
+    font-size: 15px;
+}
+.home .statistics .stu_result form label{
+    margin-top: 15px;
+    display: inline-block;
+    font-family: roboto;
+}
+.home .statistics .stu_result form input[type="submit"]{
+    background-color: #007bff;
+    padding: 12px 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #FFF;
+    width: 120px;
+    font-size: 17px;
+}
+.home .statistics .stu_result form input[type="radio"]{
+    display: inline;
+    width: 20px;
+   
+}

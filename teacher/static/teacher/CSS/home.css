@@ -1,0 +1,137 @@
+.home .statistics{
+    background-color: #eee;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+.home .flex-con{
+    display: flex;
+}
+.home .statistics .dash{
+    margin-left: 30px;
+    padding-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 30%;
+    height: 200px;
+    position: relative;
+
+}
+.home .statistics .dash a{
+position: absolute;
+bottom: 0;
+display: inline-block;
+text-decoration: none;
+color: white;
+width: 100%;
+background-color: rgb(74, 74, 204);
+padding: 7px 30%;
+border-bottom-left-radius: 10px ;
+border-bottom-right-radius: 10px ;
+font-family: roboto;
+}
+.home .statistics .dash a i{
+    margin-left: 10px;
+}
+.home .statistics .dash h3{
+font-family: roboto;
+font-size: 25px;
+}
+.home .statistics .dash .student i{
+    margin-left: 100px;
+    font-size: 75px;
+    margin-top: 10px;
+    color: rgb(61, 61, 175);
+}
+.home .statistics .dash p{
+font-family: roboto;
+margin-top: 30px;
+}
+.home .statistics .dash .student{
+    display: flex;
+    padding-left: 20px;
+
+}
+.home .statistics .d1 .student i{
+color: rgb(228, 56, 56);
+}
+.home .statistics .d1 a{
+    background-color: rgb(243, 81, 81);
+}
+.home .statistics .d2 .student i{
+    color: green;
+    }
+.home .statistics .d2 a{
+        background-color: rgb(7, 126, 7);
+}
+.home .statistics .result{
+    /* background-color: #FFF; */
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+    /* width: 60%; */
+    width: 100%;
+    margin-left: 30px;
+    position: relative;
+}
+.home .statistics .result img{
+    /* margin-left: 20px; */
+    width: 100%;
+    height: 300px;
+}
+.home .statistics .result a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    background-color:rgb(241, 115, 69);
+    font-family: roboto;
+    display: block;
+    color: rgb(255, 255, 255,.8);
+    width: 100%;
+    padding: 10px 40%;
+}
+.res-att{
+    display: flex;
+}
+.home .statistics .attend{
+    width: 30%;
+    position: relative;
+    left: 0;
+    margin-left: 40px;
+
+}
+.home .statistics .attend img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 40px;
+}
+.home .statistics .attend a{
+    position: absolute;
+    bottom: 20;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    background-color:rgb(53, 72, 126);
+    font-family: roboto;
+    display: block;
+    color: rgb(255, 255, 255,.8);
+    width: 100%;
+    padding: 10px 30%;
+}

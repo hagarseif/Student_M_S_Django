@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="{% static 'Student/fontawesome-free-6.0.0-web/css/all.css'%}"/>
+
+        <link rel="stylesheet" href="{% static 'Student/CSS/structure.css' %}">
+        <link rel="stylesheet" href="{% static 'Student/CSS/academic report.css' %}">
+    </head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static 'Student/images/student.png' %}" alt="">
+            <h4>Roaa seif</h4>
+        </div>
+        <ul class="main">
+            <li>   
+                <a href="../student_home">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Home
+                </a>
+            </li>
+            <li class="services">
+                <a href="#">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Services
+                    <i class="fa-solid fa-angle-down down"></i>
+                </a>
+            </li>
+            <ul class="child dis">
+                <li>
+                    <a href="personaldata">
+                        <i class="fa-solid fa-database"></i>
+                        Personal data</a>
+                </li>
+                <li>
+                    <a href="Homework">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                        Homework</a>
+                </li>
+                <li>
+                    <a href="timeTable">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Timetable</a>
+                </li>
+            </ul>
+            <li class="eval">
+                <a href="#">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Evaluation
+                    <i class="fa-solid fa-angle-down down1"></i>
+                </a>
+            </li>
+            <ul class="child dis child1">
+                <li>
+                    <a href="result">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        Result</a>
+                </li>
+                <li>
+                    <a href="academicreport">
+                        <i class="fa-solid fa-copy"></i>
+                        Acadimic report</a>
+                </li>
+                <li>
+                    <a href="behavioralreport">
+                        <i class="fa-solid fa-paste"></i>
+                        Behavioral report</a>
+                </li>
+                <li>
+                    <a href="take_attendence">
+                        <i class="fa-solid fa-user-check"></i>
+                        Attendance</a>
+                </li>
+            </ul>
+            <li>
+                <a href="showinterface">
+                <i class="fas fa-power-off mr-2"></i>
+                Log out</a>
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Student Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics">   
+            <div class="stu_result" >
+                <div class="log_out">
+                    <!-- <h2>Acadmic report</h2> -->
+                </div>
+            <div class="view">
+               <p>Academic report</p>
+            </div>
+            <form action="#" class="form">
+                <div class="l-p">
+                    <div>
+                        <label for="name"> Student name:</label>
+                        <p>Roaa Seif</p>
+                    </div>
+                    <div>
+                        <label for="name"> Acadimic year:</label>
+                        <p>5<sup>th</sup> prim /first term </p>
+                    </div>
+                </div>
+               
+            <div class="report_tabel"> 
+                
+            <table>
+                <tr>
+                    <th> Subjects/Months</th>
+                    <th>September</th>
+                    <th>October</th>
+                    <th>November</th>
+                    <th>December</th>
+                   </tr>
+                   <tr>
+                     <td>English</td>
+                     <td> 20</td>
+                     <td> 19 </td>
+                     <td> 18  </td>
+                     <td> 18.5</td>
+                   </tr>
+                   <tr>
+                       <td>Arabic</td>
+                       <td> 18</td>
+                       <td>  17 </td>
+                       <td> 16 </td>
+                       <td> 16.5 </td>
+                   </tr>
+                   <tr>
+                       <td>Math</td>
+                       <td> 19</td>
+                       <td> 20</td>
+                       <td> 19.5 </td>
+                       <td> 17 </td>
+                   </tr>
+                   <tr>
+                       <td>Science</td>
+                       <td>20 </td>
+                       <td> 18.5 </td>
+                       <td> 19 </td>
+                       <td>20 </td>
+                   </tr>
+                   
+                   <tr>
+                       <td>social studies</td>
+                       <td> 20 </td>
+                       <td> 20 </td>
+                       <td> 19.5  </td>
+                       <td> 19 </td>
+                       
+                   </tr>
+                   <tr>
+                       <td>Religion</td>
+                       <td> 19  </td>
+                       <td> 20  </td>
+                       <td> 20 </td>
+                       <td> 20 </td>
+                       
+                   </tr>
+
+            </table>
+            <div class="note">
+               
+               <h3>The Notes of Teacher:</h3>
+                    <p>
+                        You are good student. you must study hard to get the best grades in all subjects. 
+                        The number of hours of study of the Arabic language should be increased.
+                   </p>  
+           </div>
+    </section>
+    <script src="{% static 'Student/JS/main.js' %}"></script>
+
+</body>
+</html>

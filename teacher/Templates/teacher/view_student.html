@@ -1,0 +1,122 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static '/teacher/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/structure.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/view_student.css'%}">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static '/teacher/images/teacher1.jpg'%}" alt="">
+            <h4>Mrs Shimaa</h4>
+        </div>
+      <ul>
+            <li>
+                <a href="../teacher_home">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Home
+                </a></li>
+            <li>
+
+                <a href="takeatt">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Take Attendance</a>
+            </li>
+            <li>
+                <a href="viewatt">
+                    <i class="nav-icon fas fa-calendar-alt"></i>
+                View Attendance
+                </a>
+            </li>
+            <li>
+                <a href="viewstudent">
+                    <i class="fa-solid fa-user-group"></i>
+                View Students
+                </a>
+            </li>
+            <li>
+                <a href="addtimetable">
+                <i class="nav-icon fas fa-th"></i>
+                Add Time tabel</a>
+            </li>
+            <li>
+                <a href="addacademicreport">
+                    <i class="fa-solid fa-paste"></i>
+                    Add acadmic report</a>
+            </li>
+            <li>
+                <a href="addhomework">
+                <i class="nav-icon fas fa-th"></i>
+                Add Home work</a>
+            </li>
+            <li>
+                <a href="addbehavioralreport">
+                    <i class="fa-solid fa-paste"></i>
+                Add behavioral report</a>
+            </li>
+            <li>
+                <a href="showinterface">
+                <i class="fas fa-power-off mr-2"></i>
+                Log out</a>
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Teacher Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics">
+            <div class="manage">
+               
+                <h2>Students under me</h2>
+                   </div>
+               <div class="staff_details"> 
+                   <p>Students Degrees</p>
+                   <input type="text" placeholder="Search" name="search_staff">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+               <div class="staff_tabel">
+                    <table>
+                        <tr>
+                            <th class="first">Student Name</th>
+                            <th>Oral</th>
+                            <th>Practical</th>
+                            <th>Pehavior</th>
+                            <th >Written Exam</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>Roaa mohamed</td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Submit</button>
+               </div>
+            </div>
+    </section>
+        </body>
+        </html>
+        

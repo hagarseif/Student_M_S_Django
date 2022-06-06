@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static '/teacher/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/structure.css'%}">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static '/teacher/images/teacher1.jpg'%}" alt="">
+            <h4>Mrs Shimaa</h4>
+        </div>
+        <ul>
+            <li>   
+                <a href="../teacher_home">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Home
+                </a></li>
+            <li>
+
+                <a href="takeatt">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Take Attendance</a>
+            </li>
+            <li>
+                <a href="viewatt">
+                    <i class="nav-icon fas fa-calendar-alt"></i>
+                View Attendance
+                </a>
+            </li>
+            <li>
+                <a href="viewstudent">
+                    <i class="fa-solid fa-user-group"></i>
+                View Students
+                </a>
+            </li>
+            <li>
+                <a href="addtimetable">
+                <i class="nav-icon fas fa-th"></i>
+                Add Time tabel</a>
+            </li>
+            <li>
+                <a href="addacademicreport">
+                    <i class="fa-solid fa-paste"></i>
+                    Add acadmic report</a>
+            </li>
+            <li>
+                <a href="addhomework">
+                <i class="nav-icon fas fa-th"></i>
+                Add Home work</a>
+            </li>
+            <li>
+                <a href="addbehavioralreport">
+                    <i class="fa-solid fa-paste"></i>
+                Add behavioral report</a>
+            </li>
+            <li>
+                <a href="showinterface">
+                <i class="fas fa-power-off mr-2"></i>
+                Log out</a>
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Teacher Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics">
+            <div>
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+                    <link rel="stylesheet" href="{% static '/teacher/../fontawesome-free-6.0.0-web/css/all.css'%}">
+                    <link rel="stylesheet" href="{% static '/teacher/CSS/structure.css'%}">
+                    <link rel="stylesheet" href="{% static '/teacher/CSS/add behavioral report.css'%}">
+                </head>
+                <div class="stu_result" >
+                    <div class="log_out">
+                        <!-- <h2>Add behavioral report</h2> -->
+                    </div>
+                <div class="view">
+                   <p>Add behavioral report</p>
+                </div>
+                <form action="#">
+                 <label for="name"> Student name</label>
+                 <input type="text" placeholder="name" name="name" id="name">
+                 <label for="name">Teacher</label>
+                 <input type="text" placeholder="name" name="name" id="name">
+                 <label for="First_Name">Class number</label>
+                 <input type="number" placeholder="class number" name="class number" id="class number">
+                 <label for="First_Name">The date</label>
+                 <input type="date" placeholder="datet" name="date" id="date">
+                </br>
+                 <div class="beha_tabel"> 
+                    <table>
+                      <tr>
+                       <th> Actions</th>
+                       <th> YES or NO</th>
+                      </tr>
+                      <tr>
+                        <td>Interact with his friends</td>
+                        <td> <input type="radio" name="yes_no1" checked>Yes</input>
+                             <input type="radio" name="yes_no1">No</input>
+                              </td>
+                      </tr>
+                      <tr>
+                          <td>Obey his teacher</td>
+                          <td><input type="radio" name="yes_no2" checked>Yes</input>
+                            <input type="radio" name="yes_no2">No</input>     </td>
+                    
+                      </tr>
+                      <tr>
+                          <td>Work his homework</td>
+                          <td><input type="radio" name="yes_no3" checked>Yes</input>
+                            <input type="radio" name="yes_no3">No</input>     </td>
+                      </tr>
+                      <tr>
+                          <td>Participate in activities</td>
+                          <td> <input type="radio" name="yes_no4" checked>Yes</input>
+                            <input type="radio" name="yes_no4">No</input>    </td>
+                      </tr>
+                      <tr>
+                          <td>IS GOOD !!</td>
+                          <td> <input type="radio" name="yes_no5" checked>Yes</input>
+                            <input type="radio" name="yes_no5">No</input>    </td>
+                      </tr>
+                    </table>
+                     <input type="submit" value="ADD">
+                    </form>
+                  </div> 
+                </div>
+  </section>
+</body>
+</html> 
+        
+        

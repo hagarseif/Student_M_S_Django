@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400;500;600;700&family=Red+Hat+Mono:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static 'Student/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'Student/CSS/structure.css' %}">
+    <link rel="stylesheet" href="{% static 'Student/CSS/personaldata.css' %}">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static 'Student/images/student.png' %}" alt="">
+            <h4>Roaa seif</h4>
+        </div>
+       <ul class="main">
+            <li>
+                <a href="../student_home">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Home
+                </a>
+            </li>
+            <li class="services">
+                <a href="#">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Services
+                    <i class="fa-solid fa-angle-down down"></i>
+                </a>
+            </li>
+            <ul class="child dis">
+                <li>
+                    <a href="personaldata">
+                        <i class="fa-solid fa-database"></i>
+                        Personal data</a>
+                </li>
+                <li>
+                    <a href="Homework">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                        Homework</a>
+                </li>
+                <li>
+                    <a href="timeTable">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Timetable</a>
+                </li>
+            </ul>
+            <li class="eval">
+                <a href="#">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Evaluation
+                    <i class="fa-solid fa-angle-down down1"></i>
+                </a>
+            </li>
+            <ul class="child dis child1">
+                <li>
+                    <a href="result">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        Result</a>
+                </li>
+                <li>
+                    <a href="academicreport">
+                        <i class="fa-solid fa-copy"></i>
+                        Acadimic report</a>
+                </li>
+                <li>
+                    <a href="behavioralreport">
+                        <i class="fa-solid fa-paste"></i>
+                        Behavioral report</a>
+                </li>
+                <li>
+                    <a href="take_attendence">
+                        <i class="fa-solid fa-user-check"></i>
+                        Attendance</a>
+                </li>
+            </ul>
+            <li>
+                <a href="showinterface">
+                <i class="fas fa-power-off mr-2"></i>
+                Log out</a>
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Student Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics">
+            <div class="homework">
+                <div class="view">
+                    <h3> Student Info </h3>  
+                </div>
+                <div class="form">
+                    <form action="#">
+                        {% csrf_token %}
+                         {{form.as_p}} 
+                        <table class="">
+                           
+                  <table>
+                      <tr>
+                        <th >Name</th>  
+                        <th >Email</th> 
+                        <th colspan="2">Phone</th> 
+                        <th >Address</th> 
+                        <th >Grade</th>
+                        <th >Gender</th>
+                        <th>Age</th>
+                      </tr>
+                      <tr>
+                        <td>{{student.Name}}</td>
+                        <td>{{student.e_mail}}</td>    
+                        <td>{{student.Phone}}</td>
+                        <td>{{student.Phone}}</td>
+                        <td>{{student.Address}}</Address></td>
+                        <td>{{student.Grade}}</td>
+                        <td>{{student.Gender}}</td>
+                        <td>{{student.Age}}</td>
+                      </tr>
+
+                      <tr>
+                        <td>Aser Khaled</td>
+                            <td>Aser28.doe@example.com</td>    
+                            <td>01223341442</td>
+                            <td>01222512402</td>
+                            <td>Benisuif-Fashn</td>
+                            <td>2</td>
+                            <td>Male</td>
+                            <td>8</td>
+                      </tr>
+
+                      <tr>
+                          <td>Manar Mohamed</td>
+                          <td>Manar13.doe@example.com</td>    
+                          <td>01222549442</td>
+                          <td>01222549442</td>
+                          <td>Benisuif-Beba</td>
+                          <td>3</td>
+                          <td>Female</td>
+                          <td>9</td>
+                        </tr>
+
+                        <tr>
+                        <td>Sama Maged</td>
+                        <td>Samaa11.doe@example.com</td>    
+                        <td>01122546442</td>
+                        <td>01122546442</td>
+                        <td>Benisuif-Barot</td>
+                        <td>2</td>
+                        <td>Female</td>
+                        <td>8</td>
+                      </tr>
+
+                      <tr>
+                      <td>Aya Mostafa</td>
+                          <td>Aya22.doe@example.com</td>    
+                          <td>01254637242</td>
+                          <td>01254637242</td>
+                          <td>Benisuif-Beba</td>
+                          <td>6</td>
+                          <td>Female</td>
+                          <td>12</td>
+                        </tr>
+
+                        <tr>
+                          <td>ٍSara Ahmed</td>
+                          <td>Sara18.doe@example.com</td>    
+                          <td>01022549442</td>
+                          <td>01005549442</td>
+                          <td>Benisuif-Barot</td>
+                          <td>1</td>
+                          <td>Female</td>
+                          <td>7</td>
+                        </tr>
+
+                        <tr>
+                            <td>Basma Maged</td>
+                            <td>Basma11.doe@example.com</td>    
+                            <td>01222541442</td>
+                            <td>01222549402</td>
+                            <td>Benisuif-Beba</td>
+                            <td>5</td>
+                            <td>Female</td>
+                            <td>11</td>
+                          </tr>
+
+                          <td>Sama Marwan</td>
+                          <td>Samaa11.doe@example.com</td>    
+                          <td>01122006442</td>
+                          <td>01122506442</td>
+                          <td>Benisuif-Madina</td>
+                          <td>6</td>
+                          <td>Female</td>
+                          <td>12</td>
+                        </tr>
+
+                        <tr>
+                          <td>Basem Maged</td>
+                          <td>Basem19.doe@example.com</td>    
+                          <td>01222541442</td>
+                          <td>01222549402</td>
+                          <td>Benisuif-Beba</td>
+                          <td>5</td>
+                          <td>Male</td> 
+                          <td>11</td>
+                        </tr>
+
+                        <tr>
+                          <td>Omar Mahmoud</td>
+                          <td>Omar17.doe@example.com</td>    
+                          <td>01222541452</td>
+                          <td>01233549402</td>
+                          <td>Benisuif-Madina</td>
+                          <td>6</td>
+                          <td>Male</td> 
+                          <td>12</td>
+                        </tr>
+
+                        <tr>
+                          <td>Ahmed Abo-Bakr</td>
+                          <td>Ahmed25.doe@example.com</td>    
+                          <td>01222591442</td>
+                          <td>01222529402</td>
+                          <td>Benisuif-Fashn</td>
+                          <td>1</td>
+                          <td>Male</td> 
+                          <td>7</td>
+                        </tr>
+
+                        <tr>
+                          <td>ٍSamar Saad</td>
+                          <td>Samar96.doe@example.com</td>    
+                          <td>01229391442</td>
+                          <td>01234929402</td>
+                          <td>Benisuif-Beba</td>
+                          <td>4</td>
+                          <td>Female</td> 
+                          <td>10</td>
+                        </tr>
+
+                              </table>
+                        
+                    </form> 
+           
+        
+        </div>
+    </section>
+    <script src="{% static 'Student/JS/main.js' %}"></script>
+
+</body>
+</html>

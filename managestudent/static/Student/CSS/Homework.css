@@ -1,0 +1,63 @@
+
+.home .statistics form input[type="file"]{
+    display: none;
+}
+
+.home .statistics form label i{
+    padding-right: 5px;
+}
+.home .statistics form .beadline{
+    font-family: roboto;
+}
+.home .statistics form input[type="datetime-local"]{
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-family: roboto;
+}
+.home .statistics .homework{
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.home .statistics  .view h3{
+    color: #FFF;
+    font-family: roboto;
+}
+.home .statistics  .view{
+    margin-top: 20px;
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.home .statistics .form{
+    padding: 20px 10px;
+    background-color: #FFF;
+    display: flex;  
+
+}
+table{
+    border: 1px solid black;
+    height: 100px;
+    text-align: center;
+    font-size: larger;
+    margin: auto;
+}
+table td {
+    border:  1px solid black;
+    width: 900px;
+    height: 100px;
+    text-align: center;
+    font-size: larger;
+    padding: auto;
+
+  }
+  table th{
+    text-align: left;
+    color:#007bff;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+ 

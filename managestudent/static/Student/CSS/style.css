@@ -1,0 +1,62 @@
+.home .statistics .att{
+    padding-left: 20px;
+}
+.month{
+    padding:10px 20px;
+}
+input,
+select{
+    outline: none;
+}
+.month select{
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+}
+.stu__att{
+   padding: 1px 20px;
+}
+.month button{
+    background-color: #001f3f;
+    padding: 12px 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 17px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+}
+th {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 15px 12px;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 15px 10px;
+}
+
+input {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: #f00;
+}
+
+td.missed-col {
+    background-color: #ffecec;
+    color: #f00;
+    text-align: center;
+}
+
+.name-col {
+    text-align: left;
+}

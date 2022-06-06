@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dashboard {
+    background-color: #2f3235;
+    width: 20%;
+    min-height: 100vh;
+    position: fixed;
+}
+.dashboard .icon-admin{
+    display: flex;
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+.dashboard .icon-admin img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.dashboard .icon-admin h4{
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 20px;
+    margin-left: 15px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.dashboard ul{
+    margin-top: 15px;
+}
+.dashboard ul li{
+    list-style: none;
+    padding: 19px 10px 19px 30px;
+}
+.dashboard ul li:hover{
+    background-color: #3e3e3f;
+}
+.dashboard ul li a{
+    text-decoration: none;
+    color: #C2C7D0;
+    font-family: "Signika Negative";
+    padding-right: 50px;
+}
+.dashboard ul li i{
+    color: #C2C7D0;
+    margin-right: 10px;
+
+}
+body{
+    display: flex;
+}
+.home{
+    width: 82%;
+    margin-left: 20%;
+}
+.home .head{
+display: flex;
+background-color: #FFF;
+padding-left: 30px;
+padding: 15px 25px ;
+width: 100%;
+justify-content: space-between;
+}
+.home .head h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    color: #212529;
+    font-weight: 600;
+}
+.home .head i{
+    color: #00000080;
+    margin-top: 5px;
+}
+.home .head i:hover{
+    color: #212529;
+    
+}
+.home .statistics{
+    background-color: #eee;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+.home .statistics{
+    background-color: #eee;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+.home .statistics .stu_result{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.home .statistics .stu_result h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+.home .statistics .stu_result .view{
+    margin-top: 20px;
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.home .statistics .stu_result .view p{
+    color: #FFF;
+    font-family: roboto;
+}
+.home .statistics .stu_result form{
+    padding: 10px 30px;
+    background-color: #FFF;
+}
+.home .statistics .stu_result form input{
+    display: block;
+    margin-top: 10px;
+    padding: 15px 10px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid rgb(218, 216, 216);
+    font-family: roboto;
+    font-size: 15px;
+}
+.home .statistics .stu_result form label{
+    margin-top: 15px;
+    display: inline-block;
+    font-family: roboto;
+}
+.home .statistics .stu_result form input[type="submit"]{
+    background-color: #007bff;
+    padding: 12px 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #FFF;
+    width: 120px;
+    font-size: 17px;
+}
+.home .statistics .stu_result form input[type="radio"]{
+    display: inline;
+    width: 20px;
+   
+}
+.home .statistics .beha_tabel table{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: roboto;
+    background-color: #fff;
+    width:95.4%;
+    border:2px solid gray;
+    border-collapse: collapse;
+
+}
+.home .statistics .beha_tabel table th{
+    padding:15px 20px;
+    font-size: 20px;
+}
+.home .statistics .beha_tabel table td{
+    padding:15px 20px;
+    border-top: 1px solid #eee;
+}
+.home .statistics .beha_tabel table .mail{
+    padding:15px 43px;
+}
+.log_out{
+    display: flex;
+}

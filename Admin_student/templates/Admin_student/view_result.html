@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Admin/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'Admin/CSS/structure.css' %}">
+    <link rel="stylesheet" href="{% static 'Admin/CSS/result.css' %}">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static 'Admin/images/log.jpg' %}" alt="">
+            <h4>Admin</h4>
+        </div>
+        <ul>
+            <li>
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <a href="../admin_home">Home</a></li>
+            <li>
+                <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                <a href="showMstaff">Manage Staff</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAstaff">Add Staff</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-user-graduate"></i>
+                <a href="showMstudent">Manage Student</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAstu">Add Student</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-book"></i>
+                <a href="showMsubject">Manage Subjects</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAsubject">Add Subjects</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-chalkboard"></i>
+                <a href="showresult">View Results</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-calendar-alt"></i>
+                <a href="showVattendance">View Attendance</a>
+            </li>
+            <li>
+                <i class="fas fa-power-off mr-2"></i>
+                <a href="showinterface">Log out</a>
+
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Admin Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        {% block content %}
+
+        {% if s%}
+        <table>
+            <thead>
+            <tr>Subject id</tr>
+             <tr>Result</tr>
+            </thead>
+            <tbody>
+
+                {% for result in results %}
+                <tr>
+                    <td>{{result.subject_id}}</td>
+                    <td>{{result.result}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {%else%}
+            <h1 style="font-family:roboto;margin-left:4rem;color:red">There is no student with that id</h1>
+        {% endif %}
+        {% endblock %}
+
+
+</body>
+</html>

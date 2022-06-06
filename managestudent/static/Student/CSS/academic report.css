@@ -1,0 +1,144 @@
+
+.home .head{
+display: flex;
+background-color: #FFF;
+padding-left: 30px;
+padding: 15px 25px ;
+width: 100%;
+justify-content: space-between;
+}
+.home .head h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    color: #212529;
+    font-weight: 600;
+}
+.home .head i{
+    color: #00000080;
+    margin-top: 5px;
+}
+.home .head i:hover{
+    color: #212529;
+    
+}
+.home .statistics{
+    background-color: #eee;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+.home .statistics .stu_result{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.home .statistics .stu_result h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+.home .statistics .stu_result .view{
+    margin-top: 20px;
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.home .statistics .stu_result .view p{
+    color: #FFF;
+    font-family: roboto;
+}
+.home .statistics .stu_result form{
+    padding: 10px 30px;
+    background-color: #FFF;
+}
+.home .statistics .stu_result form input{
+    display: block;
+    margin-top: 10px;
+    padding: 15px 10px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid rgb(218, 216, 216);
+    font-family: roboto;
+    font-size: 15px;
+}
+.home .statistics .stu_result form label{
+    margin-top: 15px;
+    display: inline-block;
+    font-family: roboto;
+    font-size:25px;
+    font-weight: bold;
+    color: rgb(15, 14, 14);
+}
+.home .statistics .stu_result .form p{
+font-size: 1.3rem;
+color: rgb(15, 15, 15);
+display: inline-block;
+}
+.home .statistics .stu_result .form .l-p{
+    display: flex;
+    justify-content: space-between;
+}
+.home .statistics .report_tabel table{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: roboto;
+    background-color: #fff;
+    width:95.4%;
+    border:2px solid gray;
+    border-collapse: collapse;
+
+}
+.home .statistics .report_tabel{
+    margin-top: 30px;
+}
+.home .statistics .report_tabel table th{
+    padding:15px 20px;
+    font-size: 19px;
+    border:2px solid gray;
+    border-collapse: collapse;
+    color:#007bff;
+    width:1px;
+}
+.home .statistics .report_tabel table td{
+    padding:15px 20px;
+    border-top: 1px solid #eee;
+    width:1px;
+    border:2px solid gray;
+    border-collapse: collapse;
+    color:black;
+    font-size:17px ;
+}
+.home .statistics .stu_result p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:black;
+    font-size:24px;
+}
+.home .statistics .stu_result form{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:#007bff;
+    font-size:27px;
+    font-weight: bold;
+}
+.home .statistics .report_tabel table .mail{
+    padding:15px 43px;
+}
+.log_out{
+    display: flex;
+}
+.home .statistics .note{
+    margin-top: 30px;
+}
+.home .statistics .note h3{
+    font-size: 25px;
+    color: rgb(192, 8, 8);
+}
+.home .statistics .note p{
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

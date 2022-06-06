@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(var(--b3f,250,250,250),1);;
+    background-image: url("chastbots-list.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .login{
+    margin-top: 10%;
+    background-color: #2f3235;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 320px;
+}
+.container .login input{
+    display: block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: 1px solid #eee;
+    width:100% ;
+    outline: none;
+}
+.container .login h2{
+    text-align: center;
+    font-family: Merienda;
+    font-size: 30px;
+    color: white;
+}
+.container .login i{
+    text-align: center;
+    font-size: 50px;
+    color: #007bff;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 15px;
+}
+.container .login button{
+    display: block;
+    padding: 10px 40%;
+    margin: auto;
+    margin-top: 35px;
+    border: 0;
+    color: #fff;
+    background-color: #0b70db;
+    font-family: roboto;
+    font-size: 15px;
+}
+.container .login .link{
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    margin-top: 5px;
+    font-family: roboto;
+    font-size: 13px;
+
+}
+.container .login p
+{
+    text-align: center;
+    margin-top: 20px;
+    font-family: roboto;
+    font-size: 15px;
+}
+.container .login p a
+{
+    color: rgb(75, 75, 214);
+    text-decoration: none;
+}
+.back{
+    background-color: #2f3235;
+    padding:10px 25px;
+}
+ .back a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: cairo;
+}

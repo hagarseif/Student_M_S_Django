@@ -1,0 +1,21 @@
+.statistics{
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+}
+.statistics .text{
+    margin-bottom: 20px;
+}
+.statistics .text span{
+    font-size: 1.1rem;
+    color: rgb(48, 47, 47);
+}
+.statistics .stu__res{
+    margin-top: 20px;
+}
+.statistics table td{
+    font-size: 18px;
+}
+.statistics .text h3{
+    font-size: 1.3rem;
+}

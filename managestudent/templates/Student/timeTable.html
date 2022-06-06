@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static 'Student/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'Student/CSS/structure.css' %}">
+    <link rel="stylesheet" href="{% static 'Student/CSS/timeTable.css' %}">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static 'Student/images/student.png' %}" alt="">
+            <h4>Roaa seif</h4>
+        </div>
+        <ul class="main">
+            <li>   
+                <a href="../student_home">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Home
+                </a>
+            </li>
+            <li class="services">
+                <a href="#">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Services
+                    <i class="fa-solid fa-angle-down down"></i>
+                </a>
+            </li>
+            <ul class="child dis">
+                <li>
+                    <a href="personaldata">
+                        <i class="fa-solid fa-database"></i>
+                        Personal data</a>
+                </li>
+                <li>
+                    <a href="Homework">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                        Homework</a>
+                </li>
+                <li>
+                    <a href="timeTable">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Timetable</a>
+                </li>
+            </ul>
+            <li class="eval">
+                <a href="#">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Evaluation
+                    <i class="fa-solid fa-angle-down down1"></i>
+                </a>
+            </li>
+            <ul class="child dis child1">
+                <li>
+                    <a href="result">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        Result</a>
+                </li>
+                <li>
+                    <a href="academicreport">
+                        <i class="fa-solid fa-copy"></i>
+                        Acadimic report</a>
+                </li>
+                <li>
+                    <a href="behavioralreport">
+                        <i class="fa-solid fa-paste"></i>
+                        Behavioral report</a>
+                </li>
+                <li>
+                    <a href="take_attendence">
+                        <i class="fa-solid fa-user-check"></i>
+                        Attendance</a>
+                </li>
+            </ul>
+            <li>
+                <a href="showinterface">
+                <i class="fas fa-power-off mr-2"></i>
+                Log out</a>
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Teacher Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics">
+            <h1 align="center" class="h1">TIME TABLE</h1>
+            <table border="5" cellspacing="0" align="center">
+                
+                <tr>
+                    <td align="center" height="50" 
+                        width="100"><br>
+                        <b>Day/Period</b></br>
+                    </td>
+                    <td align="center" height="50" 
+                        width="100">
+                        <b>I<br>8:00-8:45</b>
+                    </td>
+                    <td align="center" height="50" 
+                        width="100">
+                        <b>II<br>8:45-09:30</b>
+                    </td>
+                    <td align="center" height="50" 
+                        width="100">
+                        <b>III<br>09:30-10:15</b>
+                    </td>
+                    <td align="center" height="50" 
+                        width="100">
+                        <b>V<br>10:15-11:00</b>
+                    </td>
+                    <td align="center" height="50" 
+                        width="100">
+                        <b>IV<br>11:00-11:15</b>
+                    </td>
+                    <td align="center" height="50" 
+                        width="100">
+                        <b>IIV<br>11:15-12:00</b>
+                    </td>
+                    <td align="center" height="50" 
+                    width="100">
+                    <b>IIIV<br>12:00-12:45</b>
+                </td>
+                <td align="center" height="50" 
+                width="100">
+                <b>VI<br>12:45-1:30</b>
+            </td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>Sunday</b></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td  align="center" 
+                        height="50"></td>
+                    <td rowspan="6" align="center" height="50">
+                        <h2>L<br>U<br>N<br>C<br>H</h2>
+                    </td>    
+                    <td align="center" height="50"></td>
+                    <td  align="center" height="50">
+                    </td>
+                    <td  align="center" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>Monday</b>
+                    </td>
+                    <td align="center" 
+                        height="50">
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td  align="center" height="50">
+                    </td>
+                    <td  align="center" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>Tuesday</b>
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td  align="center" height="50">
+                    </td>
+                    <td  align="center" height="50">
+                    </td>
+                    <td  align="center" height="50">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>Wednesday</b>
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td  align="center" 
+                        height="50">
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td  align="center" height="50">
+                    </td>
+                    <td  align="center" height="50">
+                    </td>
+                </tr>
+              
+                <tr>
+                    <td align="center" height="50">
+                        <b>Thursday</b>
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td  align="center" 
+                        height="50">
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td  align="center" height="50">
+                    </td>
+                    <td  align="center" height="50">
+                    </td>
+                </tr>
+            </table>
+         </div>
+    </section>
+    <script src="{% static 'Student/JS/main.js' %}"></script>
+        </body>
+        </html>
+        

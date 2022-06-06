@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static 'Admin/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'Admin/CSS/structure.css' %}">
+    <link rel="stylesheet" href="{% static 'Admin/CSS/manage_subject.css' %}">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static 'Admin/images/log.jpg' %}" alt="">
+            <h4>Admin</h4>
+        </div>
+        <ul>
+            <li>
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <a href="../admin_home">Home</a></li>
+            <li>
+                <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                <a href="showMstaff">Manage Staff</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAstaff">Add Staff</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-user-graduate"></i>
+                <a href="showMstudent">Manage Student</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAstu">Add Student</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-book"></i>
+                <a href="showMsubject">Manage Subjects</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAsubject">Add Subjects</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-chalkboard"></i>
+                <a href="showresult">View Results</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-calendar-alt"></i>
+                <a href="showVattendance">View Attendance</a>
+            </li>
+            <li>
+                <i class="fas fa-power-off mr-2"></i>
+                <a href="showinterface">Log out</a>
+
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Admin Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics"> 
+           <div class="manage">
+            <h2>Manage Subject</h2>
+            <a href="showAsubject">+Add Subject</a>
+           </div>
+           <div class="staff_details"> 
+               <p>Subject Details</p>
+               <input type="text" placeholder="Search" name="search_staff">
+               <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+           <div class="staff_tabel">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Subject Name</th>
+                        <th>Staff</th>
+                        <th>Created At</th>
+                        <th class="mail">Updated At</th>
+                        <th>Action</th>
+                  
+                    </tr>
+                </table>
+           </div>
+        </div>
+    </section>
+</body>
+</html>

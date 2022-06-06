@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container .login_flex{
+    display: flex;
+    /* background-image: linear-gradient(to right,rgb(146, 177, 68),rgba(17, 179, 31, 0.767),rgb(10, 134, 21)); */
+    background-color:#577494 ;
+    color: white;
+    padding: 10px 25px;
+}
+.container .login_flex h2{
+    font-family: 'Red Hat Mono', monospace;
+}
+.container .login_flex a{
+    font-family: roboto;
+    text-decoration: none;
+    background-color: #2261a5;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-left: 67%;
+}
+.container .groundimg{
+    background-image: url("../images/class.jpg");
+    width: 100%;
+    height: 90.8vh;
+    background-size: cover;
+}

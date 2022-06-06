@@ -1,0 +1,49 @@
+
+.home.statistics.report_tabel table{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: roboto;
+    background-color: #fff;
+    /* width:95.4%; */
+    border:2px solid gray;
+    border-collapse: collapse; margin-top: 30px;
+}
+.homework{
+    padding: 0px 20px;
+}  
+.home .statistics  table th{
+    padding:15px 20px;
+    font-size: 19px;
+    border-collapse: collapse;
+    color:#007bff;
+    width:1px;
+}
+.home .statistics  table td{
+    padding:15px 20px;
+    border-top: 1px solid #eee;
+    width:1px;
+    border-collapse: collapse;
+    color:black;
+    font-size:17px ;
+    padding: 40px 20px;
+}
+
+
+  .home .statistics  .view{
+    margin-top: 20px;
+    background-color: #007bff;
+    padding: 15px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-family: roboto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.home .statistics .form{
+    padding: 10px;
+    background-color: #FFF;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static '/teacher/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/structure.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/take_att.css'%}">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static '/teacher/images/teacher1.jpg'%}" alt="">
+            <h4>Mrs Shimaa</h4>
+        </div>
+      <ul>
+            <li>
+                <a href="../teacher_home">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Home
+                </a></li>
+            <li>
+
+                <a href="takeatt">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Take Attendance</a>
+            </li>
+            <li>
+                <a href="viewatt">
+                    <i class="nav-icon fas fa-calendar-alt"></i>
+                View Attendance
+                </a>
+            </li>
+            <li>
+                <a href="viewstudent">
+                    <i class="fa-solid fa-user-group"></i>
+                View Students
+                </a>
+            </li>
+            <li>
+                <a href="addtimetable">
+                <i class="nav-icon fas fa-th"></i>
+                Add Time tabel</a>
+            </li>
+            <li>
+                <a href="addacademicreport">
+                    <i class="fa-solid fa-paste"></i>
+                    Add acadmic report</a>
+            </li>
+            <li>
+                <a href="addhomework">
+                <i class="nav-icon fas fa-th"></i>
+                Add Home work</a>
+            </li>
+            <li>
+                <a href="addbehavioralreport">
+                    <i class="fa-solid fa-paste"></i>
+                Add behavioral report</a>
+            </li>
+            <li>
+                <a href="showinterface">
+                <i class="fas fa-power-off mr-2"></i>
+                Log out</a>
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Teacher Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics">
+            <div class="att">
+                <div class="view">
+                    <h3>Take Attendance</h3>
+                </div>
+                <form action="#">
+                
+                    <div>
+                        <label>Day </label>
+                    <select class="form-control" name="day" id="day">
+                        <option value="1"> Saturday</option> 
+                        <option value="2"> Sunday</option> 
+                        <option value="3"> Monday</option> 
+                        <option value="4"> Tuesday</option> 
+                        <option value="5"> Wednesday</option>
+                        <option value="6"> Thursday</option>
+                    </select>
+                    </div>
+                    <div >
+                    <label> Grade </label>
+                    <select class="form-control" name="grade" id="grade">
+                        <option value="1"> 1 </option> 
+                        <option value="2"> 2 </option> 
+                        <option value="3"> 3 </option> 
+                        <option value="4"> 4 </option> 
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                    </select>
+                    </div>
+                    
+                    <div >
+                    <label>Class</label>
+                    <select class="form-control" name="class" id="class">
+                        <option value="1"> A </option> 
+                        <option value="2"> B </option> 
+                        <option value="3"> C </option> 
+                        <option value="4"> D </option> 
+                        <option value="5"> E </option>
+                    </select></div>
+                
+                    <div>
+                    <input type="submit" value="Choose Class" >  </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+        </body>
+        </html>
+        

@@ -1,0 +1,287 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400;500;600;700&family=Red+Hat+Mono:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{% static '/teacher/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/structure.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/normalize.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/style.css'%}">
+    <link rel="stylesheet" href="{% static '/teacher/CSS/take_att.css'%}">
+
+</head>
+<body>
+    <section class="dashboard">
+        <div class="icon-admin">
+            <img src="{% static '/teacher/images/teacher1.jpg'%}" alt="">
+            <h4>Mrs Shimaa</h4>
+        </div>
+     <ul>
+            <li>
+                <a href=../teacher_home>
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Home
+                </a></li>
+            <li>
+
+                <a href="takeatt">
+                    <i class="nav-icon fas fa-calendar-plus"></i>
+                    Take Attendance</a>
+            </li>
+            <li>
+                <a href="viewatt">
+                    <i class="nav-icon fas fa-calendar-alt"></i>
+                View Attendance
+                </a>
+            </li>
+            <li>
+                <a href="viewstudent">
+                    <i class="fa-solid fa-user-group"></i>
+                View Students
+                </a>
+            </li>
+            <li>
+                <a href="addtimetable">
+                <i class="nav-icon fas fa-th"></i>
+                Add Time tabel</a>
+            </li>
+            <li>
+                <a href="addacademicreport">
+                    <i class="fa-solid fa-paste"></i>
+                    Add acadmic report</a>
+            </li>
+            <li>
+                <a href="addhomework">
+                <i class="nav-icon fas fa-th"></i>
+                Add Home work</a>
+            </li>
+            <li>
+                <a href="addbehavioralreport">
+                    <i class="fa-solid fa-paste"></i>
+                Add behavioral report</a>
+            </li>
+            <li>
+                <a href="showinterface">
+                <i class="fas fa-power-off mr-2"></i>
+                Log out</a>
+            </li>
+        </ul>
+    </section>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Student Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="statistics">
+            <div class="stu__att">
+
+            <!-- <h2 class="att">Student Attendance</h2> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="name-col">Student Name</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>12</th>
+                        <th>13</th>
+                        <th>14</th>
+                        <th>15</th>
+                        <th>16</th>
+                        <th>17</th>
+                        <th>18</th>
+                        <th>19</th>
+                        <th>20</th>
+                        
+                        <th class="missed-col">Days Missed-col</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="student">
+                        <td class="name-col">Hoda rady</td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="missed-col">0</td>
+                    </tr>
+                    <tr class="student">
+                        <td class="name-col">Hagar Mohamed</td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="missed-col">0</td>
+                    </tr>
+                    <tr class="student">
+                        <td class="name-col">Norseen qandiel</td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="missed-col">0</td>
+                    </tr>
+                    <tr class="student">
+                        <td class="name-col">Norhan Osama</td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="missed-col">0</td>
+                    </tr>
+                    <tr class="student">
+                        <td class="name-col">Walaa Shaban</td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="missed-col">0</td>
+                    </tr>
+                    <tr class="student">
+                        <td class="name-col">ahmed mohamed</td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="attend-col"><input type="checkbox"></td>
+                        <td class="missed-col">0</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+            <input type="submit" value="confirm">
+        </div>
+        
+        </div>
+        
+    </section>
+    <script src="{% static '/teacher/JS/main.js'%}"></script>
+    <script src="{% static '/teacherhttps://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'%}"></script>
+    <script src="{% static '/teacher/JS/app.js'%}"></script>
+
+</body>
+</html>
+        
+
+       
+  

@@ -1,0 +1,36 @@
+
+.stu__att{
+    padding:  20px;
+ }
+ .home .statistics .att{
+    padding: 20px;
+}
+th {
+    background-color: #001f3f;
+    color: #fff;
+    padding:15px 12px;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding:15px;
+}
+
+input {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: #f00;
+}
+
+td.missed-col {
+    background-color: #ffecec;
+    color: #f00;
+    text-align: center;
+}
+
+.name-col {
+    text-align: left;
+}
