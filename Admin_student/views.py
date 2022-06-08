@@ -43,33 +43,32 @@ def showadd_subject(request):
     return render(request, 'Admin_student/add_subject.html')
 
 from Admin_student import models
-from .models import student,result
+from .models import student,result,attendance
 
 def view_result(request):
     s=models.result.objects.all()
+
     stu_id=None
     if 'id' in request.GET:
         stu_id =request.GET['id']
         # if  stu_id:
         s=s.filter(student_id=stu_id)
+
     context={
-        'pro':s
+        'pro':s,
+
     }
     return render(request, 'Admin_student/view_result.html',context)
 
-# def view_result(request):
 #
-#     return render(request, 'Admin_student/view_result.html',{'pro':result.objects.filter(student_id=1)})
-
-#
-# def view_stu_att(request):
-#     s = models.attendance.objects.all()
-#     stu_id = None
-#     if 's' in request.GET:
-#         stu_id = request.GET['s']
-#         if stu_id:
-#             s = s.filter(student_id=stu_id)
-#     context = {
-#         'result': s
-#     }
-#     return render(request, 'Admin_student/attendance.html', context)
+def view_stu_att(request):
+    s = models.attendance.objects.all()
+    stu_id = None
+    if 'id' in request.GET:
+        stu_id = request.GET['id']
+        if stu_id:
+            s = s.filter(student_id=stu_id)
+    context = {
+        'attendance': s
+    }
+    return render(request, 'Admin_student/attendance.html', context)

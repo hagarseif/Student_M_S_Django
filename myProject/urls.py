@@ -25,7 +25,7 @@ from Admin_student.views import showmanage_student
 from Admin_student.views import showview_attendance
 from Admin_student.views import showadd_subject
 from Admin_student.views import showmanage_subject
-from Admin_student.views import showinterface,view_result
+from Admin_student.views import showinterface,view_result,view_stu_att
 from teacher.views import addacademicreport,\
     addbehavioralreport, adddhomework, addtimetable, \
     home, takeatt, viewatt, viewstudent ,showLogin
@@ -54,7 +54,7 @@ urlpatterns = [
     path('admin_home/showMsubject', showmanage_subject),
     path('admin_home/showinterface', showinterface),
     path('admin_home/view_result', view_result ,name='view_result'),
-    # path('admin_home/view_stu_att', view_stu_att, name='view_stu_att'),
+    path('admin_home/view_stu_att', view_stu_att, name='view_stu_att'),
 
     path('teacher_home/', home),
     path('teacher_home/addacademicreport', addacademicreport),

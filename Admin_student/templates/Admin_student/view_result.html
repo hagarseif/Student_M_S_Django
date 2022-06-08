@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{% static 'Admin/fontawesome-free-6.0.0-web/css/all.css'%}">
     <link rel="stylesheet" href="{% static 'Admin/CSS/structure.css' %}">
     <link rel="stylesheet" href="{% static 'Admin/CSS/result.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body>
     <section class="dashboard">
@@ -77,21 +78,25 @@
             <i class="fas fa-cog"></i>
         </div>
         {% block content %}
-                  {% for results in pro %}
-                        <table>
+                    <div class="container">
+
+
+                        <table class="table table-bordered table-hover">
                          <tr>
-                            <th>Student id</th>
-                            <th>Subject id</th>
+                            <th>Student Name</th>
+                            <th>Subject Name</th>
                             <th>Result</th>
                         </tr>
-
+                  {% for results in pro %}
                         <tr>
-                            <td>{{results.student_id}}</td>
+                            <td>{{results.student_id.f_name}}  {{results.student_id.l_name}}</td>
                             <td>{{results.subject_id}}</td>
                             <td>{{results.degree}}</td>
                         </tr>
-                        </table>
+
                     {% endfor %}
+                        </table>
+                        </div>
         {% endblock %}
 
     </section>
