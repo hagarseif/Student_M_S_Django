@@ -1,196 +1,117 @@
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400;500;600;700&family=Red+Hat+Mono:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="{% static 'Student/fontawesome-free-6.0.0-web/css/all.css'%}"/>
-    <link rel="stylesheet" href="{% static 'Student/CSS/structure.css' %}" />
-    <link rel="stylesheet" href="{% static 'Student/CSS/normalize.css' %}" />
-    <link rel="stylesheet" href="{% static 'Student/CSS/style.css' %}" />
-  </head>
-  <body>
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Admin/fontawesome-free-6.0.0-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'Admin/CSS/structure.css' %}">
+    <link rel="stylesheet" href="{% static 'Admin/CSS/view_attendance.css' %}">
+</head>
+
+<body>
     <section class="dashboard">
-      <div class="icon-admin">
-        <img src="{% static 'Student/images/student.png'%}" alt="" />
-        <h4>Roaa seif</h4>
-      </div>
-       <ul class="main">
+        <div class="icon-admin">
+            <img src="{% static 'Admin/images/log.jpg' %}" alt="">
+            <h4>Admin</h4>
+        </div>
+        <ul>
             <li>
-                <a href="../student_home">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
-                    Home
-                </a>
-            </li>
-            <li class="services">
-                <a href="#">
-                    <i class="nav-icon fas fa-calendar-plus"></i>
-                    Services
-                    <i class="fa-solid fa-angle-down down"></i>
-                </a>
-            </li>
-            <ul class="child dis">
-                <li>
-                    <a href="personaldata">
-                        <i class="fa-solid fa-database"></i>
-                        Personal data</a>
-                </li>
-                <li>
-                    <a href="Homework">
-                        <i class="fa-solid fa-house-chimney-window"></i>
-                        Homework</a>
-                </li>
-                <li>
-                    <a href="timeTable">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        Timetable</a>
-                </li>
-            </ul>
-            <li class="eval">
-                <a href="#">
-                    <i class="nav-icon fas fa-calendar-plus"></i>
-                    Evaluation
-                    <i class="fa-solid fa-angle-down down1"></i>
-                </a>
-            </li>
-            <ul class="child dis child1">
-                <li>
-                    <a href="result">
-                        <i class="fa-solid fa-square-poll-vertical"></i>
-                        Result</a>
-                </li>
-                <li>
-                    <a href="academicreport">
-                        <i class="fa-solid fa-copy"></i>
-                        Acadimic report</a>
-                </li>
-                <li>
-                    <a href="behavioralreport">
-                        <i class="fa-solid fa-paste"></i>
-                        Behavioral report</a>
-                </li>
-                <li>
-                    <a href="take_attendence">
-                        <i class="fa-solid fa-user-check"></i>
-                        Attendance</a>
-                </li>
-            </ul>
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <a href="../admin_home">Home</a></li>
             <li>
-                <a href="showinterface">
+                <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                <a href="showMstaff">Manage Staff</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAstaff">Add Staff</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-user-graduate"></i>
+                <a href="showMstudent">Manage Student</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAstu">Add Student</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-book"></i>
+                <a href="showMsubject">Manage Subjects</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-th"></i>
+                <a href="showAsubject">Add Subjects</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-chalkboard"></i>
+                <a href="showresult">View Results</a>
+            </li>
+            <li>
+                <i class="nav-icon fas fa-calendar-alt"></i>
+                <a href="showVattendance">View Attendance</a>
+            </li>
+            <li>
                 <i class="fas fa-power-off mr-2"></i>
-                Log out</a>
+                <a href="showinterface">Log out</a>
+
             </li>
         </ul>
     </section>
-    <section class="home">
-      <div class="head">
-        <h4>Student Management System | Student Dashboard</h4>
-        <i class="fas fa-cog"></i>
-      </div>
-      <div class="statistics">
-        <div class="stu__att">
-          <!-- <h2 class="att">Student Attendance</h2> -->
-          <form action="#" class="month">
-            <select name="month" id="month">
-              <option value="Jan">January</option>
-              <option value="Jan">February</option>
-              <option value="Jan">March</option>
-              <option value="Jan">April</option>
-              <option value="Jan">May</option>
-              <option value="Jan">September</option>
-              <option value="Jan">October</option>
-              <option value="Jan">November</option>
-              <option value="Jan">December</option>
-            </select>
-            <button>Choose</button>
-          </form>
-          <table>
-            <thead>
-              <tr>
-                <th class="name-col">Student Name</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>10</th>
-                <th>11</th>
-                <th>12</th>
-                <th>13</th>
-                <th>14</th>
-                <th>15</th>
-                <th>16</th>
-                <th>17</th>
-                <th>18</th>
-                <th>19</th>
-                <th>20</th>
 
-                <th class="missed-col">Days Missed-col</th>
-              </tr>
+    <section class="home">
+        <div class="head">
+            <h4>Student Management System | Admin Dashboard</h4>
+            <i class="fas fa-cog"></i>
+        </div>
+          {% block content %}
+
+        {% if s%}
+        <table>
+            <thead>
+            <tr>Student id</tr>
+             <tr>Attendance</tr>
+             <tr>Date</tr>
             </thead>
             <tbody>
-              <tr class="student">
-                <td class="name-col">Hoda rady</td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="attend-col"><input type="checkbox" /></td>
-                <td class="missed-col">0</td>
-              </tr>
 
-            </tbody>
-          </table>
+                {% for student in attendance %}
+                <tr>
+                    <td>{{student.subject_id}}</td>
+                    <td>{{student.attendance}}</td>
+                    <td>{{student.date}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {%else%}
+            <h1 style="font-family:roboto;margin-left:4rem;color:red">There is no student with that id</h1>
+        {% endif %}
+        {% endblock %}
+
         </div>
       </div>
     </section>

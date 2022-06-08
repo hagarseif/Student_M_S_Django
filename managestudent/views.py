@@ -38,31 +38,31 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-from .models import attendance,student
-
-
-def retrievattendance(request):
-    x = attendance.objects.all()
-
-    return render(request, 'student/attendance.html' , {'attendance':x})
-
-
-def retrievbehavioralreport(request):
-    x = attendance.objects.all()
-
-    return render(request, 'student/behavioralreport.html' , {'behavioralreport':x})
-
-def retrievacademicreport(request):
-    x = academicreport.objects.all()
-
-    return render(request, 'student/academicreport.html' , {'academicreport':x})
-
-
-def retrievpersonaldata(request):
-    x = student.objects.all()
-
-    return render(request, 'student/personaldata.html' , {'personaldatareport':x})
-
+# from .models import attendance,student
+#
+#
+# def retrievattendance(request):
+#     x = attendance.objects.all()
+#
+#     return render(request, 'student/attendance.html' , {'attendance':x})
+#
+#
+# def retrievbehavioralreport(request):
+#     x = attendance.objects.all()
+#
+#     return render(request, 'student/behavioralreport.html' , {'behavioralreport':x})
+#
+# def retrievacademicreport(request):
+#     x = academicreport.objects.all()
+#
+#     return render(request, 'student/academicreport.html' , {'academicreport':x})
+#
+#
+# def retrievpersonaldata(request):
+#     x = student.objects.all()
+#
+#     return render(request, 'student/personaldata.html' , {'personaldatareport':x})
+#
 
 
 
