@@ -48,14 +48,18 @@ from .models import student,result,attendance
 def view_result(request):
     s=models.result.objects.all()
 
+
+
     stu_id=None
     if 'id' in request.GET:
         stu_id =request.GET['id']
         # if  stu_id:
         s=s.filter(student_id=stu_id)
+        stu = models.student.objects.get(student_id=stu_id)
 
     context={
         'pro':s,
+        'student':stu
 
     }
     return render(request, 'Admin_student/view_result.html',context)
@@ -68,7 +72,10 @@ def view_stu_att(request):
         stu_id = request.GET['id']
         if stu_id:
             s = s.filter(student_id=stu_id)
+            stu = models.student.objects.get(student_id=stu_id)
+
     context = {
-        'attendance': s
+        'attendance': s,
+        'student': stu
     }
     return render(request, 'Admin_student/attendance.html', context)

@@ -93,10 +93,10 @@
           {% block content %}
 
             <div class="container">
+                <p class="d-inline"><h5 class="d-inline">Student Name: </h5>{{student.f_name}}  {{student.l_name}}</p>
                 <table class="table table-bordered table-hover">
                     <thead>
                           <tr>
-                              <th>Student Name</th>
                                 <th>Attendance</th>
                                 <th>Date</th>
                             </tr>
@@ -105,7 +105,6 @@
 
                 {% for student in attendance %}
                         <tr>
-                            <td>{{student.student_id.f_name}}  {{student.student_id.l_name}}</td>
                             <td>{{student.attendance}}</td>
                             <td>{{student.date}}</td>
                         </tr>

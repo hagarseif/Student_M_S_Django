@@ -79,17 +79,16 @@
         </div>
         {% block content %}
                     <div class="container">
+                        <p class="d-inline"><h5 class="d-inline">Student Name: </h5>{{student.f_name}}  {{student.l_name}}</p>
 
 
                         <table class="table table-bordered table-hover">
                          <tr>
-                            <th>Student Name</th>
                             <th>Subject Name</th>
                             <th>Result</th>
                         </tr>
                   {% for results in pro %}
                         <tr>
-                            <td>{{results.student_id.f_name}}  {{results.student_id.l_name}}</td>
                             <td>{{results.subject_id}}</td>
                             <td>{{results.degree}}</td>
                         </tr>
